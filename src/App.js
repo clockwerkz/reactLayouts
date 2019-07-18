@@ -60,16 +60,18 @@ function App() {
       </div>)
     } else {
     return (
-    <div className="panel__wrapper">
-      <div className="panel">
-          <h3>Panel #1</h3>
-        </div>
+    <div className="App">
+      <div className="panel__wrapper">
         <div className="panel">
-          <h3>Panel #2</h3>
-        </div>
-        <div className="panel">
-          <h3>Panel #3</h3>
-        </div>
+            <h3>Panel #1</h3>
+          </div>
+          <div className="panel">
+            <h3>Panel #2</h3>
+          </div>
+          <div className="panel">
+            <h3>Panel #3</h3>
+          </div>
+      </div>
     </div>
     )
   }
