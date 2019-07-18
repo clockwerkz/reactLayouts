@@ -1,0 +1,56 @@
+@import './variables.scss';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  color: $primary-color;
+  padding: 0 2rem;
+}
+
+
+.panel {
+  background-color: $secondary-color;
+  width: 30%;
+  height: 400px;
+  text-align: center;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.button {
+  &__wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  width: 100%;
+  text-align: center;
+  height: 100px;
+
+  &--blue {
+    background-color: dodgerblue;
+  }
+  &--green {
+    background-color:greenyellow;
+  }
+  &--yellow {
+    background-color: gold;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .panel {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .App {
+    padding: 0;
+  }
+}
